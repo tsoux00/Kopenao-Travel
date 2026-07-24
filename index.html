@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kopenao Travel — Location Chevrolet Captiva</title>
+<meta name="description" content="Kopenao Travel — location de Chevrolet Captiva pour vos voyages à Madagascar. Réservation en ligne, calendrier de disponibilité, tarifs transparents.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Loader -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-mark">
+    <svg viewBox="0 0 60 60" width="52" height="52">
+      <circle cx="30" cy="30" r="26" class="loader-ring"></circle>
+    </svg>
+    <span>KT</span>
+  </div>
+</div>
+
+<!-- Rev-counter scroll indicator (signature element) -->
+<div class="revmeter" id="revmeter" aria-hidden="true">
+  <svg viewBox="0 0 120 120" width="72" height="72">
+    <circle cx="60" cy="60" r="50" class="rev-track"></circle>
+    <circle cx="60" cy="60" r="50" class="rev-fill" id="revFill"></circle>
+    <line x1="60" y1="60" x2="60" y2="18" class="rev-needle" id="revNeedle"></line>
+    <circle cx="60" cy="60" r="4" class="rev-hub"></circle>
+  </svg>
+  <span class="rev-label" id="revLabel">0%</span>
+</div>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#accueil" class="brand">
+      <span class="brand-mark">KT</span>
+      <span class="brand-name">Kopenao <em>Travel</em></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#vehicule">Véhicule</a>
+      <a href="#options">Options</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#disponibilite">Disponibilité</a>
+      <a href="#reservation">Réservation</a>
+      <a href="#avis">Avis</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#reservation" class="btn btn-primary nav-cta">Réserver</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#vehicule">Véhicule</a>
+  <a href="#options">Options</a>
+  <a href="#tarifs">Tarifs</a>
+  <a href="#disponibilite">Disponibilité</a>
+  <a href="#reservation">Réservation</a>
+  <a href="#avis">Avis</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<main>
+
+<!-- 1. HERO -->
+<section class="hero" id="accueil">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="shape shape-a"></div>
+    <div class="shape shape-c"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow reveal">Kopenao Travel · Antananarivo, Madagascar</p>
+      <h1 class="hero-title reveal">Kopenao Travel — Location Chevrolet&nbsp;Captiva pour vos voyages</h1>
+      <p class="hero-sub reveal">Voyagez en toute sérénité avec un SUV confortable, spacieux et parfaitement équipé.</p>
+      <div class="hero-actions reveal">
+        <a href="#reservation" class="btn btn-primary">Réserver maintenant</a>
+        <a href="#disponibilite" class="btn btn-ghost">Voir les disponibilités</a>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-count="7">0</span>
+          <span class="stat-label">places</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num-text">SUV</span>
+          <span class="stat-label">confortable</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num-text">24/7</span>
+          <span class="stat-label">disponible</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num-text">✓</span>
+          <span class="stat-label">assistance incluse</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="hero-plate">
+        <span>KOPENAO · TRAVEL</span>
+      </div>
+      <svg class="suv-illustration" viewBox="0 0 640 340" xmlns="http://www.w3.org/2000/svg" aria-label="Illustration SUV Chevrolet Captiva">
+        <ellipse cx="320" cy="300" rx="250" ry="18" class="suv-shadow"></ellipse>
+        <path class="suv-body" d="M70 210 C70 170 95 150 140 145 L190 110 C205 98 225 90 250 90 L410 90 C435 90 455 98 470 112 L505 145 C555 150 585 168 590 205 L590 235 C590 250 578 260 562 260 L540 260 C540 232 517 210 490 210 C463 210 440 232 440 260 L230 260 C230 232 207 210 180 210 C153 210 130 232 130 260 L108 260 C90 260 78 250 78 236 Z"></path>
+        <path class="suv-glass" d="M205 145 L235 115 C245 106 258 100 272 100 L400 100 C413 100 425 106 435 116 L462 145 Z"></path>
+        <line x1="330" y1="100" x2="330" y2="145" class="suv-pillar"></line>
+        <circle cx="180" cy="260" r="42" class="suv-wheel"></circle>
+        <circle cx="180" cy="260" r="18" class="suv-hub"></circle>
+        <circle cx="490" cy="260" r="42" class="suv-wheel"></circle>
+        <circle cx="490" cy="260" r="18" class="suv-hub"></circle>
+        <rect x="565" y="180" width="28" height="12" rx="3" class="suv-light"></rect>
+        <rect x="72" y="180" width="24" height="10" rx="3" class="suv-light-front"></rect>
+      </svg>
+      <div class="road-line"></div>
+    </div>
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true"><span></span></div>
+</section>
+
+<!-- 2. PRESENTATION -->
+<section class="section presentation" id="vehicule">
+  <div class="container split">
+    <div class="split-visual reveal">
+      <svg class="suv-illustration suv-illustration--side" viewBox="0 0 640 340" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <ellipse cx="320" cy="300" rx="250" ry="18" class="suv-shadow"></ellipse>
+        <path class="suv-body" d="M70 210 C70 170 95 150 140 145 L190 110 C205 98 225 90 250 90 L410 90 C435 90 455 98 470 112 L505 145 C555 150 585 168 590 205 L590 235 C590 250 578 260 562 260 L540 260 C540 232 517 210 490 210 C463 210 440 232 440 260 L230 260 C230 232 207 210 180 210 C153 210 130 232 130 260 L108 260 C90 260 78 250 78 236 Z"></path>
+        <path class="suv-glass" d="M205 145 L235 115 C245 106 258 100 272 100 L400 100 C413 100 425 106 435 116 L462 145 Z"></path>
+        <line x1="330" y1="100" x2="330" y2="145" class="suv-pillar"></line>
+        <circle cx="180" cy="260" r="42" class="suv-wheel"></circle>
+        <circle cx="180" cy="260" r="18" class="suv-hub"></circle>
+        <circle cx="490" cy="260" r="42" class="suv-wheel"></circle>
+        <circle cx="490" cy="260" r="18" class="suv-hub"></circle>
+      </svg>
+    </div>
+    <div class="split-copy">
+      <p class="eyebrow reveal">Le véhicule</p>
+      <h2 class="reveal">Présentation du Chevrolet Captiva</h2>
+      <p class="lead reveal">Un SUV familial pensé pour les longues distances comme pour la ville : espace généreux, confort premium et une tenue de route rassurante sur toutes les routes de Madagascar.</p>
+
+      <div class="adv-grid">
+        <div class="adv-card reveal">
+          <span class="adv-icon">◧</span>
+          <h3>Grand espace intérieur</h3>
+          <p>7 places modulables et un coffre généreux pour vos bagages.</p>
+        </div>
+        <div class="adv-card reveal">
+          <span class="adv-icon">◍</span>
+          <h3>Confort premium</h3>
+          <p>Sièges ergonomiques et suspension pensée pour le long trajet.</p>
+        </div>
+        <div class="adv-card reveal">
+          <span class="adv-icon">◈</span>
+          <h3>Idéal famille &amp; voyage</h3>
+          <p>Modularité et rangements adaptés aux voyages en groupe.</p>
+        </div>
+        <div class="adv-card reveal">
+          <span class="adv-icon">◔</span>
+          <h3>Faible consommation</h3>
+          <p>Motorisation efficiente pour des trajets plus économiques.</p>
+        </div>
+        <div class="adv-card reveal">
+          <span class="adv-icon">◭</span>
+          <h3>Sécurité renforcée</h3>
+          <p>Freinage ABS, airbags multiples et contrôle de stabilité.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. OPTIONS -->
+<section class="section options" id="options">
+  <div class="container">
+    <p class="eyebrow reveal center">Caractéristiques</p>
+    <h2 class="reveal center">Fonctionnalités &amp; options du véhicule</h2>
+
+    <div class="tabs reveal">
+      <button class="tab-btn active" data-tab="confort">Confort</button>
+      <button class="tab-btn" data-tab="securite">Sécurité</button>
+      <button class="tab-btn" data-tab="technologie">Technologie</button>
+    </div>
+
+    <div class="tab-panels">
+      <div class="tab-panel active" data-panel="confort">
+        <div class="opt-card"><span class="opt-icon">❄</span><h4>Climatisation automatique</h4><p>Température régulée sur toute la cabine.</p></div>
+        <div class="opt-card"><span class="opt-icon">◫</span><h4>Sièges confortables</h4><p>Maintien optimal sur les longs trajets.</p></div>
+        <div class="opt-card"><span class="opt-icon">▤</span><h4>Grand coffre</h4><p>Volume de chargement généreux et modulable.</p></div>
+        <div class="opt-card"><span class="opt-icon">◉</span><h4>Caméra de recul</h4><p>Manœuvres facilitées en toute sécurité.</p></div>
+        <div class="opt-card"><span class="opt-icon">▭</span><h4>Écran multimédia</h4><p>Interface tactile intuitive à bord.</p></div>
+      </div>
+      <div class="tab-panel" data-panel="securite">
+        <div class="opt-card"><span class="opt-icon">◐</span><h4>ABS</h4><p>Freinage antiblocage pour plus de contrôle.</p></div>
+        <div class="opt-card"><span class="opt-icon">◑</span><h4>Airbags</h4><p>Protection frontale et latérale des passagers.</p></div>
+        <div class="opt-card"><span class="opt-icon">◒</span><h4>Contrôle de stabilité</h4><p>Trajectoire maîtrisée en toutes conditions.</p></div>
+        <div class="opt-card"><span class="opt-icon">◓</span><h4>Assistance au stationnement</h4><p>Capteurs pour un stationnement précis.</p></div>
+      </div>
+      <div class="tab-panel" data-panel="technologie">
+        <div class="opt-card"><span class="opt-icon">◔</span><h4>Bluetooth</h4><p>Connexion sans fil pour appels et musique.</p></div>
+        <div class="opt-card"><span class="opt-icon">▥</span><h4>USB</h4><p>Ports de charge pour tous les passagers.</p></div>
+        <div class="opt-card"><span class="opt-icon">▦</span><h4>Android Auto</h4><p>Intégration complète de votre smartphone.</p></div>
+        <div class="opt-card"><span class="opt-icon">▧</span><h4>Apple CarPlay</h4><p>Navigation, musique et messages à l'écran.</p></div>
+        <div class="opt-card"><span class="opt-icon">◎</span><h4>GPS</h4><p>Navigation intégrée pour tous vos trajets.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. TARIFS -->
+<section class="section pricing" id="tarifs">
+  <div class="container">
+    <p class="eyebrow reveal center">Tarification</p>
+    <h2 class="reveal center">Des tarifs transparents</h2>
+
+    <div class="price-grid">
+      <div class="price-card reveal">
+        <h3>Courte durée</h3>
+        <p class="price"><span class="price-num">120 000&nbsp;Ar</span><span class="price-unit">/jour</span></p>
+        <ul>
+          <li>Kilométrage inclus : 200&nbsp;km/jour</li>
+          <li>Assistance 24h/24</li>
+          <li>Assurance incluse</li>
+        </ul>
+        <a href="#reservation" class="btn btn-outline">Réserver cette offre</a>
+      </div>
+
+      <div class="price-card price-card--highlight reveal">
+        <span class="price-badge">Meilleure offre</span>
+        <h3>1 semaine</h3>
+        <p class="price"><span class="price-num">700 000&nbsp;Ar</span><span class="price-unit">/semaine</span></p>
+        <ul>
+          <li>Kilométrage inclus : 1400&nbsp;km</li>
+          <li>Assistance 24h/24</li>
+          <li>Assurance incluse</li>
+          <li>Prix par km supplémentaire : 2 000&nbsp;Ar</li>
+        </ul>
+        <a href="#reservation" class="btn btn-primary">Réserver cette offre</a>
+      </div>
+
+      <div class="price-card reveal">
+        <h3>1 mois</h3>
+        <p class="price"><span class="price-num">2 600 000&nbsp;Ar</span><span class="price-unit">/mois</span></p>
+        <ul>
+          <li>Kilométrage inclus : 5000&nbsp;km</li>
+          <li>Assistance 24h/24</li>
+          <li>Assurance incluse</li>
+          <li>Prix par km supplémentaire : 2 000&nbsp;Ar</li>
+        </ul>
+        <a href="#reservation" class="btn btn-outline">Réserver cette offre</a>
+      </div>
+    </div>
+
+    <p class="price-note reveal">Kilométrage supplémentaire facturé à <strong>2 000&nbsp;Ar/km</strong> au-delà du forfait inclus. Option chauffeur disponible en supplément.</p>
+  </div>
+</section>
+
+<!-- 5. DISPONIBILITE -->
+<section class="section availability" id="disponibilite">
+  <div class="container">
+    <p class="eyebrow reveal center">Calendrier</p>
+    <h2 class="reveal center">Vérifiez la disponibilité du Chevrolet Captiva</h2>
+
+    <div class="calendar-wrap reveal">
+      <div class="calendar-header">
+        <button id="calPrev" class="cal-nav" aria-label="Mois précédent">‹</button>
+        <h3 id="calMonthLabel"></h3>
+        <button id="calNext" class="cal-nav" aria-label="Mois suivant">›</button>
+      </div>
+      <div class="calendar-legend">
+        <span><i class="dot dot-available"></i> Disponible</span>
+        <span><i class="dot dot-reserved"></i> Réservé</span>
+        <span><i class="dot dot-today"></i> Aujourd'hui</span>
+      </div>
+      <div class="calendar-grid" id="calendarGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. RESERVATION -->
+<section class="section booking" id="reservation">
+  <div class="container">
+    <p class="eyebrow reveal center">Réservation</p>
+    <h2 class="reveal center">Réservez votre Chevrolet Captiva</h2>
+
+    <div class="booking-grid">
+      <form class="booking-form reveal" id="bookingForm" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="fullname">Nom complet</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Ex : Rakoto Jean">
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="vous@exemple.com">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="phone">Téléphone</label>
+            <input type="tel" id="phone" name="phone" required placeholder="+261 XX XX XXX XX">
+          </div>
+          <div class="field">
+            <label for="driver">Option chauffeur</label>
+            <select id="driver" name="driver">
+              <option value="non">Sans chauffeur</option>
+              <option value="oui">Avec chauffeur (+25&nbsp;Ar/jour)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="dateStart">Date de départ</label>
+            <input type="date" id="dateStart" name="dateStart" required>
+          </div>
+          <div class="field">
+            <label for="timeStart">Heure de départ</label>
+            <input type="time" id="timeStart" name="timeStart" required value="09:00">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="dateEnd">Date de retour</label>
+            <input type="date" id="dateEnd" name="dateEnd" required>
+          </div>
+          <div class="field">
+            <label for="timeEnd">Heure de retour</label>
+            <input type="time" id="timeEnd" name="timeEnd" required value="09:00">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="3" placeholder="Précisions sur votre voyage (optionnel)"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Confirmer ma réservation</button>
+      </form>
+
+      <aside class="booking-summary reveal">
+        <h3>Récapitulatif</h3>
+        <div class="summary-row">
+          <span>Durée</span>
+          <span class="mono" id="sumDays">0 jour</span>
+        </div>
+        <div class="summary-row">
+          <span>Tarif journalier</span>
+          <span class="mono" id="sumRate">120 000&nbsp;Ar/jour</span>
+        </div>
+        <div class="summary-row">
+          <span>Option chauffeur</span>
+          <span class="mono" id="sumDriver">—</span>
+        </div>
+        <div class="summary-row summary-total">
+          <span>Total estimé</span>
+          <span class="mono" id="sumTotal">0&nbsp;Ar</span>
+        </div>
+        <p class="summary-hint">Le tarif s'ajuste automatiquement : 120 000&nbsp;Ar/jour, 700 000&nbsp;Ar/semaine dès 7 jours, 2 600 000&nbsp;Ar/mois dès 28 jours.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- 7. COMMENT CA MARCHE -->
+<section class="section process">
+  <div class="container">
+    <p class="eyebrow reveal center">Processus</p>
+    <h2 class="reveal center">Comment ça marche ?</h2>
+
+    <div class="timeline">
+      <div class="timeline-step reveal">
+        <span class="step-num">01</span>
+        <h3>Choisissez vos dates</h3>
+        <p>Consultez le calendrier et sélectionnez la période de votre voyage.</p>
+      </div>
+      <div class="timeline-step reveal">
+        <span class="step-num">02</span>
+        <h3>Sélectionnez vos options</h3>
+        <p>Avec ou sans chauffeur, kilométrage adapté à votre itinéraire.</p>
+      </div>
+      <div class="timeline-step reveal">
+        <span class="step-num">03</span>
+        <h3>Confirmez votre réservation</h3>
+        <p>Envoyez votre demande, notre équipe revient vers vous rapidement.</p>
+      </div>
+      <div class="timeline-step reveal">
+        <span class="step-num">04</span>
+        <h3>Profitez de votre voyage</h3>
+        <p>Prenez la route à bord d'un SUV confortable et bien entretenu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. TEMOIGNAGES -->
+<section class="section testimonials" id="avis">
+  <div class="container">
+    <p class="eyebrow reveal center">Avis clients</p>
+    <h2 class="reveal center">Ce que disent nos clients</h2>
+
+    <div class="carousel" id="carousel">
+      <div class="carousel-track" id="carouselTrack">
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>Service professionnel, voiture confortable et réservation très simple.</p>
+          <span class="review-name">— Hery R.</span>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>Le Captiva était impeccable et l'équipe très réactive du début à la fin.</p>
+          <span class="review-name">— Fanja A.</span>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★☆</div>
+          <p>Très bon rapport qualité-prix, parfait pour un voyage en famille.</p>
+          <span class="review-name">— Tiana M.</span>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p>Réservation en ligne rapide et calendrier de disponibilité très clair.</p>
+          <span class="review-name">— Njara L.</span>
+        </div>
+      </div>
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. CONTACT -->
+<section class="section contact" id="contact">
+  <div class="container split">
+    <div class="contact-info reveal">
+      <p class="eyebrow">Contact</p>
+      <h2>Parlons de votre prochain voyage</h2>
+      <ul class="info-list">
+        <li><span class="info-label">Kopenao Travel</span></li>
+        <li><span class="info-label">Téléphone</span><span class="mono">+261 XX XX XXX XX</span></li>
+        <li><span class="info-label">Email</span><span class="mono">contact@kopenao-travel.com</span></li>
+        <li><span class="info-label">Adresse</span><span>Antananarivo, Madagascar</span></li>
+      </ul>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">ig</a>
+        <a href="#" aria-label="WhatsApp">wa</a>
+      </div>
+      <div class="map-placeholder">
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=47.4500%2C-18.9800%2C47.6200%2C-18.8600&layer=mapnik&marker=-18.9200%2C47.5350"
+          style="border:0; width:100%; height:100%; border-radius:inherit;"
+          loading="lazy"
+          title="Carte d'Antananarivo, Madagascar"></iframe>
+      </div>
+    </div>
+
+    <form class="contact-form reveal" id="contactForm">
+      <div class="field">
+        <label for="cName">Nom</label>
+        <input type="text" id="cName" required placeholder="Votre nom">
+      </div>
+      <div class="field">
+        <label for="cEmail">Email</label>
+        <input type="email" id="cEmail" required placeholder="vous@exemple.com">
+      </div>
+      <div class="field">
+        <label for="cMsg">Message</label>
+        <textarea id="cMsg" rows="4" required placeholder="Votre message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Envoyer le message</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark">KT</span>
+      <span class="brand-name">Kopenao <em>Travel</em></span>
+      <p>Location de Chevrolet Captiva à Madagascar.</p>
+    </div>
+    <nav class="footer-links">
+      <a href="#vehicule">Véhicule</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#disponibilite">Disponibilité</a>
+      <a href="#reservation">Réservation</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="footer-contact">
+      <span>+261 XX XX XXX XX</span>
+      <span>contact@kopenao-travel.com</span>
+      <span>Antananarivo, Madagascar</span>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Kopenao Travel. Tous droits réservés.</span>
+  </div>
+</footer>
+
+<!-- Floating mobile CTA -->
+<a href="#reservation" class="floating-cta" id="floatingCta">Réserver</a>
+
+<!-- Confirmation modal -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Fermer">×</button>
+    <div class="modal-icon">✓</div>
+    <h3 id="modalTitle">Demande envoyée</h3>
+    <p>Votre demande de réservation a bien été enregistrée. L'équipe Kopenao Travel vous contactera rapidement.</p>
+    <button class="btn btn-primary" id="modalOk">Fermer</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
